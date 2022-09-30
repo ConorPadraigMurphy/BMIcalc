@@ -28,7 +28,7 @@ class Veh {
     }
 
     Information() {
-
+        //Information netted
         console.log(`Make: ${this.make}`);
         console.log(`Model: ${this.model}`);
         console.log(`Year: ${this.year}`);
@@ -41,11 +41,11 @@ class Veh {
 
 class Cars extends Veh {
     constructor(make, model, year, doors) {
-        super(make,model,year);
+        super(make, model, year);
         this.doors = doors;
     }
 
-    Information(){
+    Information() {
         //ooutputs cars information using super.information
         super.Information();
         //Outputs the numver of doors
@@ -56,3 +56,5 @@ class Cars extends Veh {
 //Inputs the information for each variable. Make: volvo, model: 12, year:2020, doors 5
 let MyCar = new Cars("Volvo", "12", 2020, 5);
 console.log(MyCar.Information());
+
+//Conor Murphy
